@@ -242,14 +242,14 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center justify-center font-sans">
-      <div className="relative w-full max-w-md h-screen max-h-[800px] overflow-hidden bg-white shadow-2xl rounded-[5px] border-4 border-gray-200 flex flex-col">
+    <div className="app-container bg-white min-h-screen w-full font-sans">
+      <div className="relative w-full h-full min-h-screen overflow-hidden bg-white flex flex-col">
         {isLocked ? (
           <LockScreen onUnlock={() => setIsLocked(false)} onLogout={handleLogout} />
         ) : (
           <>
             {showAuthHeader && <AuthHeader />}
-            <div key={currentScreen} className={`flex-grow overflow-y-auto ${showAuthHeader ? "animate-slide-in-up" : "h-full"}`}>
+            <div key={currentScreen} className={`flex-grow overflow-y-auto w-full ${showAuthHeader ? "animate-slide-in-up" : "h-full"}`}>
                 {renderScreen()}
             </div>
             {showBottomNav && <BottomNav activeScreen={currentScreen} setScreen={navigate} />}
