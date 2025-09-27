@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ALFares App
 
-# Run and deploy your AI Studio app
+تطبيق الفارس - تطبيق خدمات مالية ومصرفية شامل
 
-This contains everything you need to run your app locally.
+## الميزات
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ZD_jNuwM5NSQ0SJFDmQWBnTh5kOlLvC7
+- خدمات مالية متنوعة
+- واجهة مستخدم عربية
+- تصميم متجاوب
+- خدمات حكومية
+- خدمات تعليمية
+- خدمات التأمين
+- والمزيد...
 
-## Run Locally
+## التشغيل المحلي
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## البناء للإنتاج
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run build
+```
+
+## النشر على GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## التقنيات المستخدمة
+
+- React 19
+- TypeScript
+- Vite
+- CSS Modules
+
+## المطور
+
+- الاسم: same7samy00
+- البريد الإلكتروني: Same7redaa@gmail.com
+
+## الرابط المباشر
+
+سيكون التطبيق متاح على: https://same7samy00.github.io/ALFARESAPP
